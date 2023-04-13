@@ -1,10 +1,11 @@
 import React from "react";
 import { Button, ButtonGroup, Grid, GridItem, Show } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
 const App = () => {
   return (
     <Grid templateAreas={{ base: `"nav""main"`, lg: `"nav nav""aside main"` }}>
-      <GridItem area="nav" bg="coral">
-        Nav
+      <GridItem area="nav">
+        <NavBar />
       </GridItem>
       {/* to make sure aside is only shown on large devices we must wrap it inside show */}
       {/* it has prop above which means the content inside it will only be shown on the screen size above the mentioned  */}
